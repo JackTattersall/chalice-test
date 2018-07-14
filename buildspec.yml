@@ -1,0 +1,8 @@
+version: 0.1
+phases:
+  install:
+      commands:
+            - sudo pip install --upgrade awscli
+            - aws --version
+            - sudo pip install 'chalice>=1.5.0,<1.6.0'
+            - sudo pip install -r requirements.txt
